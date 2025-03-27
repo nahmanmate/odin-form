@@ -24,18 +24,36 @@
             <form action="accountCreated.html" method="post">
                 <h2>Fill it out mate.</h2>
                 <div id="formContainer">
-                <fieldset class="fullName">
-                    <label for="firstName" placeholder="Jimmy">First Name</label>
-                    <input type="text" name="firstName" id="firstName">
-                    <label for="firstName" placeholder="Barnes">Last Name</label>
-                    <input type="text" name="lastName" id="lastName">
-                </fieldset>
-                <fieldset>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="confirmPassword" name="confirmPassword" id="confirmPassword">
-                </fieldset>
+                    <div class="nameFields">
+                    <label for="firstName" placeholder="Jimmy">
+                        First Name: 
+                        <input type="text" name="firstName" id="firstName" maxlength="50">
+                    </label>
+                    <label for="lastName" placeholder="Barnes">
+                        Last Name: 
+                    <input type="text" name="lastName" id="lastName" maxlength="50">
+                </label>
+            </div>
+            <div class="contactFields">
+                <label for="email">
+                    Email Address:
+                    <input type="email" name="email" id="email" required>
+                </label>
+                <label for="mobilePhone">
+                    Mobile Phone: 
+                    <input type="tel" name="mobilePhone" id="mobilePhone">
+                </label>
+            </div>
+                    <div class="passwordFields">
+                        <label for="password">
+                            Password: 
+                            <input type="password" name="password" id="password" maxlength="30">
+                        </label>
+                        <label for="confirmPassword">
+                            Confirm Password: 
+                            <input type="confirmPassword" name="confirmPassword" id="confirmPassword" maxlength="30">
+                        </label>
+                    </div>
             </div>
                 <button type="submit">Create Account</button>
                 <span>You already sorted your life out? You can just <a href="login.html">sign in here</a></span>

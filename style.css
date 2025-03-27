@@ -3,3 +3,93 @@
     src: url(GrowWest-Regular.ttf);
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: "GrowWest", sans-serif
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    display:flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+#leftSide {
+    max-width: calc(100px + 25%);
+    background-image: url("green_leaf_plant.jpg");
+    background-repeat: no-repeat;
+    background-size: min(100vh);
+    overflow:hidden;
+    flex:1
+}
+
+#logoContainer {
+    position:relative;
+    text-align: center;
+    margin-top: 30%;
+    background-color:rgba(255, 255, 255, 0.247);
+    padding: 2rem;
+    flex: 0;
+}
+
+#rightSide {
+    flex:1;
+    text-align:center;
+    margin: auto 0;
+}
+
+.form {
+    flex:1;
+    /* display:flex; */
+    text-align:center;
+    background-color: rgba(46, 141, 27, 0.253);
+    padding: 1vh 0 2vh 0;
+    margin: 2vh 0;
+}
+
+#fieldsContainer {
+    /* flex:1; */
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    padding: 2vh 10vw;
+}
+
+#fieldsContainer div {
+    display: flex;
+    flex-direction: column;
+    text-align:right;
+    gap:1rem;
+    
+}
+
+input {
+    display:flex;
+    font-size: 1.5rem;
+    border-radius:1rem;
+}
+
+input:valid {
+    border: 2px solid black;
+  }
+  input:invalid {
+    border: 2px dashed red
+  }
+  input:required {
+    border: 2px solid black;
+  }
+  
+
+heroImage {
+    width: 100px;
+    height: 100px;
+}
