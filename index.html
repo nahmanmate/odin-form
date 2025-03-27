@@ -23,42 +23,40 @@
         <div class="form">
             <form action="accountCreated.html" method="post">
                 <h2>Fill it out mate.</h2>
-                <div id="formContainer">
-                    <div class="nameFields">
-                    <label for="firstName" placeholder="Jimmy">
-                        First Name: 
-                        <input type="text" name="firstName" id="firstName" maxlength="50">
-                    </label>
-                    <label for="lastName" placeholder="Barnes">
-                        Last Name: 
-                    <input type="text" name="lastName" id="lastName" maxlength="50">
-                </label>
-            </div>
-            <div class="contactFields">
-                <label for="email">
-                    Email Address:
-                    <input type="email" name="email" id="email" required>
-                </label>
-                <label for="mobilePhone">
-                    Mobile Phone: 
-                    <input type="tel" name="mobilePhone" id="mobilePhone">
-                </label>
-            </div>
-                    <div class="passwordFields">
+                <div id="fieldsContainer">
+                    <div class="column1">
+                        <label for="firstName" placeholder="Jimmy">
+                            First Name: 
+                            <input type="text" name="firstName" id="firstName" maxlength="50">
+                        </label>
+                        <label for="email">
+                            Email Address:
+                            <input type="email" name="email" id="email" required>
+                        </label>   
                         <label for="password">
                             Password: 
-                            <input type="password" name="password" id="password" maxlength="30">
-                        </label>
-                        <label for="confirmPassword">
-                            Confirm Password: 
-                            <input type="confirmPassword" name="confirmPassword" id="confirmPassword" maxlength="30">
-                        </label>
+                            <input type="password" name="password" id="password" minlength="12" maxlength="30" required>
+                        </label>     
+                    </div>
+                    <div class="column2">
+                        <label for="lastName" placeholder="Barnes">
+                            Last Name: 
+                        <input type="text" name="lastName" id="lastName" maxlength="50">
+                    </label>
+                    <label for="mobilePhone">
+                        Mobile Phone: 
+                        <input type="tel" name="mobilePhone" id="mobilePhone">
+                    </label>
+                    <label for="confirmPassword">
+                        Confirm Password: 
+                        <input type="password" name="confirmPassword" id="confirmPassword" minlength="12" maxlength="30" required>
+                    </label>  
                     </div>
             </div>
                 <button type="submit">Create Account</button>
-                <span>You already sorted your life out? You can just <a href="login.html">sign in here</a></span>
             </form>
         </div>
+        <span>You already sorted your life out? You can just <a href="login.html">sign in here.</a></span>
     </div>
 </body>
 </html>

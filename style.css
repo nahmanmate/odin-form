@@ -69,6 +69,7 @@ body {
     flex-direction: column;
     text-align:right;
     gap:1rem;
+    margin-bottom:1rem;
     
 }
 
@@ -76,19 +77,31 @@ input {
     display:flex;
     font-size: 1.5rem;
     border-radius:1rem;
+    border: 1px solid #E5E7EB;
 }
 
-input:valid {
-    border: 2px solid black;
-  }
-  input:invalid {
-    border: 2px dashed red
-  }
-  input:required {
-    border: 2px solid black;
-  }
-  
+input {
+    border: 2px solid rgb(155, 62, 231);
+}
 
+input:user-invalid{
+    border: 2px dashed red
+}
+
+input:focus {
+    border: 2px solid blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+    outline: none;
+}
+  
+button {
+    background-color:rgb(155, 62, 231);
+    border-radius:1rem;
+    font-size:1.5rem;
+    color:white;
+    font-weight:700;
+    padding: 0.5rem 1rem;
+}
 heroImage {
     width: 100px;
     height: 100px;
