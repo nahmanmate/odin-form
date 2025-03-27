@@ -3,11 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="leftSide">
+        <div id="logoContainer">
+            <img src="logoipsum-332.svg" class="logo">
+        </div>
+        <div id="copyright"></div>
+    </div>
+    <div id="rightSide">
+        <h1>Do the right thing. <em>Join today.</em></h1>
+        <div class="info">
+            <p>Who really knows what this website is for? But don't miss out. You'll be sad. </p>
+        </div>
+        <div class="form">
+            <form action="accountCreated.html" method="post">
+                <h2>Fill it out mate.</h2>
+                <div id="formContainer">
+                <fieldset class="fullName">
+                    <label for="firstName" placeholder="Jimmy">First Name</label>
+                    <input type="text" name="firstName" id="firstName">
+                    <label for="firstName" placeholder="Barnes">Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+                </fieldset>
+                <fieldset>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="confirmPassword" name="confirmPassword" id="confirmPassword">
+                </fieldset>
+            </div>
+                <button type="submit">Create Account</button>
+                <span>You already sorted your life out? You can just <a href="login.html">sign in here</a></span>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
