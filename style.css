@@ -21,6 +21,13 @@ body {
     display:flex;
     flex-direction: row;
     min-height: 100vh;
+    text-align: center;
+}
+
+.signUpThanks {
+    flex: 1;
+    align-content: center;
+    background: rgba(46, 141, 27, 0.253);
 }
 
 #leftSide {
@@ -29,16 +36,22 @@ body {
     background-repeat: no-repeat;
     background-size: min(100vh);
     overflow:hidden;
-    flex:1
+    flex:0.8
 }
 
 #logoContainer {
+    display:flex;
     position:relative;
-    text-align: center;
+    justify-content:center;
     margin-top: 30%;
     background-color:rgba(255, 255, 255, 0.247);
     padding: 2rem;
     flex: 0;
+}
+
+#logoContainer img {
+    flex:1;
+    max-width:30vh
 }
 
 #rightSide {
